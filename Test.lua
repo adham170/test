@@ -7,6 +7,23 @@ URL=dofile("./File/url.lua")
 https= require("ssl.https")
 sudos= dofile("sudo.lua")
 bot_id=token:match("(%d+)")  
+io.popen("mkdir File_Bot") 
+io.popen("cd File_Bot && rm -rf commands.lua.1") 
+io.popen("cd File_Bot && rm -rf commands.lua.2") 
+io.popen("cd File_Bot && rm -rf commands.lua.3") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/BOYKATEAM/Files_Boyka/master/File_Bot/commands.lua") 
+t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
+i = 0
+for v in io.popen('ls File_Bot'):lines() do
+if v:match(".lua$") then
+i = i + 1
+t = t.."\27[39m"..i.."\27[36m".." - \27[10;32m"..v..",\27[m \n"
+end
+end
+print(t)
+function vardump(value)  
+print(serpent.block(value, {comment=false}))   
+end 
 Sudos = {Sudo,1488653639}
 print("\27[34m"..[[::تم تشغيل البوت بنجاح::]].."\27[m")
 print("\27[34m"..[[::BY : @Q_Y_4::]].."\27[m")
