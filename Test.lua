@@ -9,7 +9,7 @@ sudos= dofile("sudo.lua")
 bot_id=token:match("(%d+)")  
 Sudos = {Sudo,1488653639}
 print("\27[34m"..[[::تم تشغيل البوت بنجاح::]].."\27[m")
-print("\27[34m"..[[::BY : @BGBBB::]].."\27[m")
+print("\27[34m"..[[::BY : @Q_Y_4::]].."\27[m")
 function vardump(value)
 print(serpent.block(value, {comment=false}))
 end
@@ -913,7 +913,7 @@ end --- Chat_Type
 
 
 if text == '/start' then
-S(chat_id,"message","text","⌔️︙تم  .",message_id) 
+S(chat_id,"message","text","⌔️︙انا بوت اختصاصي حمايه المجموعات  .",message_id) 
 end
 end --- tdcli_update_callback End 
 end --- UpdateNewMessage 
